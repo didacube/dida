@@ -8,12 +8,20 @@
     != partial("splash.jade")
 
 script (type='text/javascript').
+    $('#home').hide();
+    $('#splash').hide();
     if (Cookie.test()) {
+        // Returning User
         if (Cookie.get('cookies')) {
-            $('#splash').hide();
+            $('#home').fadeIn();
         }
+        // Previous User
         else {
             Cookie.set('cookies','true');
-            $("#home").css('display', 'none');
+            $('#splash').fadeIn();
+            setTimeout(function(){
+                $('#splash').fadeOut();
+                $('#home').fadeIn();
+            }, 10000);
         }
     }
