@@ -5,5 +5,16 @@
     #tagline.text-center Duke University's Creative Design Agency
     != partial("_shared/_navbar_home.jade")
 
+.splash
+    != partial("splash.jade")
+
 script (type='text/javascript').
-    
+    if (Cookie.test()) {
+        if (Cookie.get('cookies')) {
+            $('.splash').hide();
+        }
+        else {
+            Cookie.set('cookies','true');
+            $("#home").hide();
+        }
+    }
