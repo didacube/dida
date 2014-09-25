@@ -8,8 +8,16 @@
     != partial("splash.jade")
 
 script (type='text/javascript').
+    $('button#skip').on('click', function() {
+        removeSplash();
+    });
+
+    // Hide both panes, we'll selectively
+    // show which one we want later
     $('#home').hide();
     $('#splash').hide();
+    
+    // Check for user cookies
     if (Cookie.test()) {
         // Returning User
         if (Cookie.get('cookies')) {
@@ -20,8 +28,15 @@ script (type='text/javascript').
             Cookie.set('cookies','true');
             $('#splash').fadeIn();
             setTimeout(function(){
-                $('#splash').fadeOut();
-                $('#home').fadeIn();
+                removeSplash();
             }, 10000);
         }
     }
+
+    // Remove the splash dialog and fade
+    // in the home page.
+    var removeSplash = function() {
+        $('#splash').fadeOut();
+        $('#home').fadeIn();
+    }
+
