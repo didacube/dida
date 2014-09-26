@@ -1,24 +1,64 @@
 != partial("_shared/_navbar.jade")
 .pane
     #content.container
+        h2 DiDA Project Request Form
         form(name="login", action="/login", method="post")
-            input(type="text", name="project-lead")
-            input(type="text", name="contact-email")
-            input(type="text", name="contact-phone")
-            input(type="text", name="partners")
+
+            h3 Tell us about yourself!
+
+            h4 Name
             input(type="text", name="name")
+
+            h4 Organzation
             input(type="text", name="organization")
+
+            h4 Contact Email
+            input(type="text", name="contact-email")
+           
+            h4 Contact Phone
+            input(type="text", name="contact-phone")
+
+            p Great! Let's get started with some logistical details about the project.
+
+            h4 Project Lead
+            input(type="text", name="project-lead")
+            
+            h4 Project Partners
+            input(type="text", name="partners")
+            
+            h4 Deadline
             input(type="date", name="deadline")
+            
+            p Awesome! Tell us more about what you want the project to do.
+
+            h4 Project Brief
             textarea(name="brief")
+
+            h4 Call to Action
             textarea(name="call-action")
+            
+            h4 Primary Message
             textarea(name="primary-message")
+            
+            h4 Additional Message
             textarea(name="additional-message")
+            
+            h4 Primary Goal
             textarea(name="primary-goal")
+            
+            h4 Additional Goal
             textarea(name="additional-goal")
-            textarea(name="additional-goal")
+            
+            h4 Primary Audience
             textarea(name="primary audience")
+            
+            h4 Additional Audience
             textarea(name="additional-audience")
+            
+            h4 Potential Hurdles
             textarea(name="hurdles")
+            
+            h4 Areas of Need
             ul
                 li
                     input(type="checkbox", name="design", value="design")
@@ -36,8 +76,13 @@
                     input(type="checkbox", name="unsure", value="unsure")
                     | Not Sure
 
+            h4 Materials
             textarea(name="materials")
+            
+            h4 Elements
             textarea(name="elements")
+            
+            h4 Things to Avoid
             textarea(name="avoid")
 
             input(type="submit", value="Submit")
