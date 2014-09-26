@@ -1,2 +1,43 @@
 != partial("_shared/_navbar.jade")
-#content
+.pane
+    #content.container
+        form(name="login", action="/login", method="post")
+            input(type="text", name="project-lead")
+            input(type="text", name="contact-email")
+            input(type="text", name="contact-phone")
+            input(type="text", name="partners")
+            input(type="text", name="name")
+            input(type="text", name="organization")
+            input(type="date", name="deadline")
+            textarea(name="brief")
+            textarea(name="call-action")
+            textarea(name="primary-message")
+            textarea(name="additional-message")
+            textarea(name="primary-goal")
+            textarea(name="additional-goal")
+            textarea(name="additional-goal")
+            textarea(name="primary audience")
+            textarea(name="additional-audience")
+            textarea(name="hurdles")
+            ul
+                li
+                    input(type="checkbox", name="design", value="design")
+                    | Design
+                    input(type="checkbox", name="copy", value="copy")
+                    | Copy
+                    input(type="checkbox", name="marketing", value="marketing")
+                    | Marketing
+                    input(type="checkbox", name="video", value="video")
+                    | Video
+                    input(type="checkbox", name="photo", value="photo")
+                    | Photography
+                    input(type="checkbox", name="web", value="web")
+                    | Web
+                    input(type="checkbox", name="unsure", value="unsure")
+                    | Not Sure
+
+            textarea(name="materials")
+            textarea(name="elements")
+            textarea(name="avoid")
+
+            input(type="submit", value="Submit")
