@@ -25,3 +25,23 @@
 	width: 100%;
 	height: 100%;
 }
+
+button#skip {
+	background-color: transparent;
+	border: 2px solid $orange;
+	display: block;
+	clear: both;
+	width: 33%;
+	margin-left: 33%;
+	text-align: center;
+	font-weight: 900;
+	margin-top: 20px;
+	color: $orange;
+	border-radius: 4px;
+	padding: 8px 4px 8px 4px;
+}
+
+button#skip:hover {
+	color: white;
+	background-color: $orange;
+}
