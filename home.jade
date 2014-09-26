@@ -19,10 +19,14 @@ script (type='text/javascript').
     
     // Check for user cookies
     if (Cookie.test()) {
+        
         // Returning User
         if (Cookie.get('cookies')) {
-            $('#home').fadeIn(1000);
+            setTimeout(function(){
+                $('#home').fadeIn(1000);
+            }, 400)
         }
+
         // Previous User
         else {
             Cookie.set('cookies','true');
