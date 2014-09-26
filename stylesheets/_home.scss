@@ -28,7 +28,7 @@
 
 button#skip {
 	background-color: transparent;
-	border: 2px solid $orange;
+	border: 5px solid $orange;
 	display: block;
 	clear: both;
 	width: 33%;
@@ -36,12 +36,20 @@ button#skip {
 	text-align: center;
 	font-weight: 900;
 	margin-top: 20px;
-	color: $orange;
-	border-radius: 4px;
+	color: black;
 	padding: 8px 4px 8px 4px;
 }
 
 button#skip:hover {
 	color: white;
 	background-color: $orange;
+}
+
+@media screen and (max-width: 768px) {
+
+	button#skip {
+		width: 100%;
+		margin-left: 0%;
+	}
+	
 }
