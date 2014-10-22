@@ -1,6 +1,5 @@
 $logo-height-home: 200px;
 $logo-height: 50px;
-
 #navbar-home {
 	margin-top: 40px;
 	background-color: white;
@@ -10,7 +9,6 @@ $logo-height: 50px;
 		padding: 0;
 		margin: 0;
 	}
-
 	a {
 		text-transform: uppercase;
 		font-weight: 900;
@@ -32,7 +30,6 @@ $logo-height: 50px;
 			background-color: $orange;
 		}
 	}
-
 	li {
 		display: inline-block;
 		list-style: none;
@@ -41,7 +38,6 @@ $logo-height: 50px;
 		padding: 0 20px;
 	}
 }
-
 #logo-home {
 	img {
 		height: $logo-height-home;
@@ -49,10 +45,10 @@ $logo-height: 50px;
 		margin: 0 auto;
 	}
 }
-
 nav {
-	padding: 20px;
+	padding-bottom: 20px;
 	box-sizing: border-box;
+	border-bottom: 1px solid $grey;
 	ul {
 		padding: 0;
 		margin: 0;
@@ -69,6 +65,8 @@ nav {
 			cursor: pointer;
 			margin-top: -3px;
 		}
+	}
+	.active {
 		&:after {
 			content: '';
 			display: block;
@@ -78,7 +76,6 @@ nav {
 			background-color: $orange;
 		}
 	}
-
 	li {
 		display: inline-block;
 		list-style: none;
@@ -87,7 +84,6 @@ nav {
 		margin: 0 20px;
 	}
 }
-
 #logo {
 	display: inline-block;
 	margin-right: 20px;
