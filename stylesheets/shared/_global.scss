@@ -47,6 +47,10 @@ button {
 	background: none;
 	border: none;
 	@include hover-underline;
+	&:focus {
+		text-decoration: none;
+		color: $black;
+	}
 }
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary {
 	background: $orange !important;

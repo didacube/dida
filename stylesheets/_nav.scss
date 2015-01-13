@@ -15,6 +15,10 @@ $logo-height: 200px;
 		letter-spacing: 2px;
 		color: $black;
 		@include hover-underline;
+		&:focus {
+			text-decoration: none;
+			color: $black;
+		}
 	}
 	li {
 		display: inline-block;
@@ -59,6 +63,10 @@ nav {
 			text-decoration: none;
 			cursor: pointer;
 			margin-top: -3px;
+		}
+		&:focus {
+			text-decoration: none;
+			color: $black;
 		}
 	}
 	.active {

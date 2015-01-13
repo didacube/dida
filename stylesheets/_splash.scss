@@ -4,19 +4,19 @@
 	display: block;
 	margin-bottom: 20px;
 }
-#splash-content {
+#splash {
 	display: block;
 	margin: 0 auto;
-	padding-top: 20px;
-	width: 60%;
-	p {
-		line-height: 20px;
-		font-size: 14px;
-		padding: 20px 0;
+	.content-body {
+		margin: 0 auto;
 	}
 }
 #welcome {
 	font-weight: 300;
 	font-size: 28px;
-	padding: 20px;
+	padding: 0 20px 20px 20px;
+}
+#skip {
+	margin: 30px auto;
+	display: block;
 }

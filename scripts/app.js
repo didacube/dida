@@ -10,20 +10,11 @@ $(document).ready(function() {
     $('#home').hide();
     $('#splash').hide();
 
-    // Check for user cookies.
-    if (Cookie.test()) {
-
-        // Returning User.
-        if (Cookie.get('cookies')) {
-            setTimeout(function() {
-                $('#home').fadeIn(1000);
-            }, 400);
-        } else { // Previous User.
-            Cookie.set('cookies', 'true');
-            $('#splash').fadeIn(1000);
-        }
+    if (window.localStorage.splash == undefined || window.localStorage.splash == false) {
+        $('#splash').show();
+        window.localStorage.setItem("splash", true);
     } else {
-        $('#home').fadeIn(1000);
+        $('#home').show();
     }
 
     // Remove the splash dialog and fade
