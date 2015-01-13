@@ -15,13 +15,12 @@ if (Cookie.test()) {
         setTimeout(function() {
             $('#home').fadeIn(1000);
         }, 400);
-    }
-
-    // Previous User
-    else {
+    } else { // Previous User
         Cookie.set('cookies', 'true');
         $('#splash').fadeIn(1000);
     }
+} else {
+    $('#home').fadeIn(1000);
 }
 
 // Remove the splash dialog and fade

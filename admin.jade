@@ -1,0 +1,14 @@
+link(rel="stylesheet" href="stylesheets/vendor/bootstrap-switch.css")
+script(src="/scripts/vendor/bootstrap-switch.js")
+
+#content
+  #admin-sign-in-form
+    form
+      .form-group
+        label Username
+        input.form-control(name="username")
+      .form-group
+        label Password
+        input.form-control(name="password" type="password")
+      button#admin-sign-in-button.pull-right(type="button") Sign In
+!= partial("_shared/_admin_dashboard.jade")

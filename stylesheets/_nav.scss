@@ -1,5 +1,4 @@
-$logo-height-home: 200px;
-$logo-height: 50px;
+$logo-height: 200px;
 #navbar-home {
 	margin-top: 40px;
 	background-color: white;
@@ -15,20 +14,7 @@ $logo-height: 50px;
 		font-size: 18px;
 		letter-spacing: 2px;
 		color: $black;
-		&:hover {
-			color: $black;
-			text-decoration: none;
-			cursor: pointer;
-			margin-top: -3px;
-		}
-		&:after {
-			content: '';
-			display: block;
-			margin: 0 auto;
-			width: inherit;
-			height: 3px;
-			background-color: $orange;
-		}
+		@include hover-underline;
 	}
 	li {
 		display: inline-block;
@@ -40,18 +26,27 @@ $logo-height: 50px;
 }
 #logo-home {
 	img {
-		height: $logo-height-home;
+		height: $logo-height;
 		display: block;
 		margin: 0 auto;
 	}
 }
+#nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
 nav {
-	padding-bottom: 20px;
+	background-color: white;
+	margin: 30px auto;
+	padding: 30px 0;
 	box-sizing: border-box;
 	border-bottom: 1px solid $grey;
 	ul {
+		display: table;
 		padding: 0;
-		margin: 0;
+		margin: 0 auto;
 	}
 	a {
 		text-transform: uppercase;
@@ -84,10 +79,23 @@ nav {
 		margin: 0 20px;
 	}
 }
-#logo {
-	display: inline-block;
-	margin-right: 20px;
-	img {
-		height: $logo-height;
+@media(max-width:767px){
+	nav {
+		width: $content-width-sm;
+	}
+}
+@media(min-width:768px){
+	nav {
+		width: $content-width-md;
+	}
+}
+@media(min-width:992px){
+	nav {
+		width: $content-width-md;
+	}
+}
+@media(min-width:1200px){
+	nav {
+		width: $content-width-lg;
 	}
 }

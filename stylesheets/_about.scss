@@ -1,0 +1,44 @@
+@media(max-width:767px){
+	.number {
+		margin-bottom: 30px;
+	}
+	.descriptor {
+		width: $descriptor-width-md;
+	}
+}
+@media(min-width:768px){
+	.number {
+		margin-bottom: 30px;
+	}
+	.descriptor {
+		width: $descriptor-width-md;
+	}
+}
+@media(min-width:992px){
+	.number {
+		margin-bottom: 0;
+	}
+	.descriptor {
+		padding-top: 20px;
+		width: $descriptor-width-lg;
+	}
+}
+@media(min-width:1200px){
+	.number {
+		margin-bottom: 0;
+	}
+	.descriptor {
+		padding-top: 20px;
+		width: $descriptor-width-lg;
+	}
+}
+.number {
+	float: left;
+	font-size: 65px;
+	font-weight: 900;
+	line-height: 60px;
+	margin-right: 20px;
+	padding: 3px;
+	color: $black;
+	border-bottom: solid 5px $orange;
+}
