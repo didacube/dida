@@ -1,6 +1,6 @@
 #admin-dashboard
-	!= partial("_admin_navbar.jade")
+	!= partial("_shared/_admin_navbar.jade")
 	.content-body
 		label Toggle Request Page
-		p When you turn the request page off, it will automagically update the website to display: "Sorry, DIDA will not be taking requests for the time being" and take down the request form.  
-		input(type="checkbox" name="requestToggle" checked)
+		p When you turn the request page off, it will automagically update the website to display: "Sorry, DIDA will not be taking requests for the time being" and take down the request form. When you turn it on, it will throw the form back up on the site.  
+		input#admin-request-toggle(type="checkbox" name="requestToggle" checked)
