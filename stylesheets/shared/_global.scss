@@ -44,6 +44,7 @@ button {
 	font-weight: 900;
 	font-size: 18px;
 	color: $black;
+	letter-spacing: 2px;
 	background: none;
 	border: none;
 	@include hover-underline;

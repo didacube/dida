@@ -25,6 +25,7 @@ if (currentUser) {
 	$(document).ready(function() {
 		$("#admin-sign-in-form").hide();
 		$("#admin-dashboard").addClass("verified");
+		$("#admin-name").text(currentUser.get("username"));
 	});
 }
 
@@ -33,9 +34,12 @@ $(document).ready(function() {
 	$("#admin-sign-in-button").click(function() {
 		var username = $("input[name='username']").val();
 		var password = $("input[name='password']").val();
-		Parse.User.logIn(username, password, function(res) {
+		Parse.User.logIn(username, password).then(function(res) {
 			$("#admin-dashboard").addClass("verified");
 			$("#admin-sign-in-form").hide();
+			$("#admin-name").text(username);
+		}, function(error) {
+			// TODO: Implement alerts.
 		});
 		return false;
 	});
