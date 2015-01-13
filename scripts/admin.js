@@ -1,11 +1,18 @@
+var currentUser = Parse.User.current();
+console.log(currentUser);
+if (currentUser) {
+	$(document).ready(function() {
+		$("#admin-sign-in-form").hide();
+		$("#admin-dashboard").addClass("verified");
+	});
+}
 $(document).ready(function() {
 	$("[name='requestToggle']").bootstrapSwitch();
 	$("#admin-sign-in-button").click(function() {
 		var username = $("input[name='username']").val();
 		var password = $("input[name='password']").val();
 		Parse.User.logIn(username, password, function(res) {
-			console.log()
-			$("#admin-contents").addClass("verified");
+			$("#admin-dashboard").addClass("verified");
 			$("#admin-sign-in-form").hide();
 		});
 		return false;
