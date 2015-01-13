@@ -1,11 +1,11 @@
 var currentUser = Parse.User.current();
-console.log(currentUser);
 if (currentUser) {
 	$(document).ready(function() {
 		$("#admin-sign-in-form").hide();
 		$("#admin-dashboard").addClass("verified");
 	});
 }
+
 $(document).ready(function() {
 	$("[name='requestToggle']").bootstrapSwitch();
 	$("#admin-sign-in-button").click(function() {

@@ -5,10 +5,13 @@ html
     script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js")
     script(src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js")
     script(src="http://www.parsecdn.com/js/parse-1.3.3.min.js")
+    script(src="/scripts/vendor/bootstrap-switch.js")
     script(src="/scripts/parse.js")
     script(src="/scripts/admin.js")
+    script(src="/scripts/requests.js")
     script(src="/scripts/cookie.js")
     link(rel="stylesheet" href="stylesheets/vendor/animate.css")
+    link(rel="stylesheet" href="stylesheets/vendor/bootstrap-switch.css")
   body.animated.fadeIn
     != yield
     script(src="/scripts/app.js")

@@ -31,14 +31,33 @@ form {
 			border: 1px solid $orange;
 		}
 	}
-	label {
-		text-transform: uppercase;
-		font-weight: 900;
-		font-size: 14px;
-		letter-spacing: 1px;
-		color: $black;
-	}
-
+}
+label {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 14px;
+	letter-spacing: 1px;
+	color: $black;
+}
+button {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 18px;
+	color: $black;
+	background: none;
+	border: none;
+	@include hover-underline;
+}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary {
+	background: $orange !important;
+}
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default {
+	background: lighten($orange, 40%) !important;
+	color: #aaaaaa !important;
+}
+.bootstrap-switch-focused {
+	box-shadow: none !important;
+	border-color: $orange !important;
 }
 @media(max-width:767px){
 	.content-body {

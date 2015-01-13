@@ -4,15 +4,6 @@
 	width: 300px;
 	height: 300px;
 	margin: auto;
-	#admin-sign-in-button {
-		text-transform: uppercase;
-		font-weight: 900;
-		font-size: 18px;
-		color: $black;
-		background: none;
-		border: none;
-		@include hover-underline;
-	}
 }
 #admin-dashboard {
 	display: none;
