@@ -53,6 +53,13 @@ button {
 		color: $black;
 	}
 }
+a {
+	color: $orange;
+	&:hover {
+		color: darken($orange, 20%);
+		text-decoration: none;
+	}
+}
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary {
 	background: $orange !important;
 }

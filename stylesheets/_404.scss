@@ -1,0 +1,18 @@
+#page-not-found {
+	@include vertical-align();
+	a {
+		text-transform: uppercase;
+		font-weight: 900;
+		font-size: 18px;
+		color: $black;
+		letter-spacing: 2px;
+		background: none;
+		border: none;
+		@include hover-underline;
+		&:focus {
+			text-decoration: none;
+			color: $black;
+		}
+		display: inline-block;
+	}
+}
