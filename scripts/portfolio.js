@@ -32,6 +32,27 @@ var loadDesigns = function(type) {
 };
 
 $(document).ready(function() {
+
+	// Default view for portfolio are designs
+	$("#team").hide();
+	$("#designs").show();
+	$("#work-item").addClass("active");
+
+	// Upon clicking on the submenu items switch displays
+	$(".main li").click(function(event) {
+		$(".main li.active").removeClass("active");
+		$(event.currentTarget).addClass("active");
+		$(event.target).addClass("active");
+		if ($(event.currentTarget).data("target") == "team") {
+			$("#team").show();
+			$("#designs").hide();
+		} else {
+			$("#designs").show();
+			$("#team").hide();
+		}
+	});
+
+	// Setup masonry for the design gallery
 	$(".designs").masonry();
 	$(".designs").imagesLoaded(function() {
 		$(".designs").masonry({
