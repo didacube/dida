@@ -32,3 +32,11 @@
 			transform: .5s ease-in;
 		}
 }
+
+@mixin nav-font() {
+	text-transform: uppercase;
+	font-weight: 900;
+	font-size: 18px;
+	letter-spacing: 2px;
+	color: $black;
+}

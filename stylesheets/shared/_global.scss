@@ -15,6 +15,7 @@ body {
 	padding: 20px;
 	overflow-y: scroll;
 	.content-body {
+		z-index: -1;
 		margin-top: 90px;
 		margin-left: auto;
 		margin-right: auto;
@@ -40,11 +41,7 @@ label {
 	color: $black;
 }
 button {
-	text-transform: uppercase;
-	font-weight: 900;
-	font-size: 18px;
-	color: $black;
-	letter-spacing: 2px;
+	@include nav-font;
 	background: none;
 	border: none;
 	@include hover-underline;

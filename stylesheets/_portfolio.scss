@@ -1,0 +1,58 @@
+#display {
+	margin-top: 10px;
+	h4 {
+		@include nav-font;
+		font-size: 14px;
+	}
+	#team {
+		.profile {
+			display: inline-block;
+			position: relative;
+			margin: 5px;
+			width: 150px;
+			height: 150px;
+			img {
+				width: 150px;
+			}
+			.info {
+				position: absolute;
+				bottom: 0;
+				background:rgba(0,0,0,0.5);
+				width: 150px;
+				padding: 5px;
+				color: white;
+				font-size: 12px;
+				.description {
+					font-weight: 300;
+				}
+			}
+
+		}
+	}
+	#designs {
+		.design {
+			display: inline-block;
+			margin: 5px;
+			width: 300px;
+			img.thumb {
+				width: 300px;
+			}
+			.info-wrapper {
+				border: solid 1px $grey;
+				padding: 10px;
+				img.designer {
+					margin: 10px 0;
+					width: 30px;
+					height: 30px;
+				}
+				.designers {
+					font-size: 12px;
+					.names-prefix {
+					text-transform: uppercase;
+					font-size: 10px;
+					}
+				}
+			}
+		}
+	}
+}
