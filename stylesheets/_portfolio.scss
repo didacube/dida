@@ -12,7 +12,7 @@
 			width: 150px;
 			height: 150px;
 			img {
-				width: 150px;
+				width: 100%;
 			}
 			.info {
 				position: absolute;
@@ -30,16 +30,22 @@
 		}
 	}
 	#work {
+		h4 {
+			position: relative;
+		}
 		.design {
 			display: inline-block;
 			margin: 5px;
-			width: 300px;
+			width: 150px;
 			img.thumb {
-				width: 300px;
+				width: 100%;
 			}
 			.info-wrapper {
 				border: solid 1px $grey;
 				padding: 10px;
+				strong {
+					text-transform: capitalize;
+				}
 				img.designer {
 					margin: 10px 0;
 					width: 30px;
@@ -47,9 +53,9 @@
 				}
 				.designers {
 					font-size: 12px;
-					.names-prefix {
-					text-transform: uppercase;
-					font-size: 10px;
+					.names {
+						text-transform: uppercase;
+						font-size: 10px;
 					}
 				}
 			}
