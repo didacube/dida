@@ -9,6 +9,7 @@ query.find({
 			});
 		} else {
 			$("#message").show();
+
 		}
 	},
 	error: function(error) {
