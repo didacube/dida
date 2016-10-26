@@ -6712,22 +6712,22 @@ nav li {
 
 @media (max-width: 767px) {
     iframe {
-        height: 4700px;
+        height: 900px;
     }
 }
 @media (min-width: 768px) {
     iframe {
-        height: 3900px;
+        height: 700px;
     }
 }
 @media (min-width: 992px) {
     iframe {
-        height: 3850px;
+        height: 650px;
     }
 }
 @media (min-width: 1200px) {
     iframe {
-        height: 3900px;
+        height: 600px;
     }
 }
 #logo-splash {
